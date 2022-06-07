@@ -291,7 +291,7 @@ export const darkTheme = createTheme({
 
 export const globalStyles = globalCss({
   ':root': {
-    '--outline-width': '5px',
+    '--outline-width': '2px',
     '--outline-offset': '2px',
   },
   ':focus:not(:focus-visible)': {

@@ -17,8 +17,9 @@ const StyledHeader = styled('header', {
 })
 
 const ThemeToggle = styled('button', {
-  all: 'unset',
   display: 'flex',
+  backgroundColor: 'transparent',
+  color: '$hiContrastText',
   alignItems: 'center',
   justifyContent: 'center',
   border: '1px solid $gray7',
@@ -40,7 +41,8 @@ const ThemeToggle = styled('button', {
 })
 
 const MenuItem = styled('a', {
-  all: 'unset',
+  color: '$hiContrastText',
+  textDecoration: 'none',
   fontSize: '$sm',
   fontWeight: '$medium',
 
