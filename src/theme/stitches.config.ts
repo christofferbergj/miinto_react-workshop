@@ -25,7 +25,7 @@ export const { styled } = createStitches({
       white: 'hsla(0, 0%, 100%, 1)',
       black: 'hsla(0, 0%, 0%, 1)',
 
-      appBg: '$gray2',
+      appBg: '$gray1',
       subtleBg: '$gray2',
 
       hiContrastText: '$gray12',
@@ -278,7 +278,7 @@ export const darkTheme = createTheme({
     ...greenDark,
     ...tomatoDark,
 
-    appBg: '$gray2',
+    appBg: '$gray1',
     subtleBg: '$gray2',
 
     hiContrastText: '$gray12',
