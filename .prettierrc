@@ -1,0 +1,15 @@
+{
+  "arrowParens": "always",
+  "semi": false,
+  "singleQuote": true,
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
+  "importOrder": [
+    "^react$/",
+    "<THIRD_PARTY_MODULES>",
+    "^~/app/?(.*)$",
+    "^~/(react|hooks|components|public)/?(.*)$",
+    "^(../)+",
+    "^(./)"
+  ]
+}
