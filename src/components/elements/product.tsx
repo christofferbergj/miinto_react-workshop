@@ -1,8 +1,9 @@
 import { HeartFilledIcon, HeartIcon } from '@radix-ui/react-icons'
-import React, { useState } from 'react'
+import React from 'react'
 
 import { Box } from '~/components/elements/box'
 import { Text } from '~/components/elements/text'
+import { useSetFavourite } from '~/hooks/use-set-favourite'
 
 import { styled } from '~/theme'
 import { TProduct } from '~/utils/generate-product'
@@ -46,12 +47,12 @@ const FavouriteButton = styled('button', {
 })
 
 export const Product = ({ id, price, title, image }: TProduct) => {
-  const [isFavourite, setIsFavourite] = useState(false)
+  const { isFavourite, toggleFavourite } = useSetFavourite()
 
   return (
     <div key={id}>
       <Box
-        onClick={() => setIsFavourite(!isFavourite)}
+        onClick={toggleFavourite}
         css={{
           display: 'flex',
           alignItems: 'center',
@@ -109,10 +110,7 @@ export const Product = ({ id, price, title, image }: TProduct) => {
         </Box>
 
         <Box css={{ ml: '$4' }}>
-          <FavouriteButton
-            type="button"
-            onClick={() => setIsFavourite(!isFavourite)}
-          >
+          <FavouriteButton type="button" onClick={toggleFavourite}>
             {isFavourite ? <HeartFilledIcon /> : <HeartIcon />}
           </FavouriteButton>
         </Box>
