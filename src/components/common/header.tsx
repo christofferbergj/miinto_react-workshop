@@ -66,14 +66,13 @@ export const Header = () => {
           bold
           uppercase
           css={{
-            borderRight: '2px solid $amber9',
-            pr: '$3',
-            py: '$1',
+            display: 'inline-flex',
+            p: '$1',
             whiteSpace: 'nowrap',
             mr: '$10',
           }}
         >
-          The Miinto Shop
+          The Miinto Dynamite Shop <Text css={{ ml: '$2' }}>🧨</Text>
         </Text>
 
         <Box css={{ ml: 'auto', d: 'flex', ai: 'center' }}>

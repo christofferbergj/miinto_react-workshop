@@ -28,10 +28,13 @@ export const Container = styled('div', {
       '4': {
         maxWidth: '1600px',
       },
+      '5': {
+        maxWidth: '1800px',
+      },
     },
   },
 
   defaultVariants: {
-    size: '4',
+    size: '5',
   },
 })
