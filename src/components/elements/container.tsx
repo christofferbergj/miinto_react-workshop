@@ -29,7 +29,7 @@ export const Container = styled('div', {
         maxWidth: '1600px',
       },
       '5': {
-        maxWidth: '1800px',
+        maxWidth: '1860px',
       },
     },
   },
