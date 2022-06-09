@@ -11,6 +11,10 @@ export const Container = styled('div', {
     px: '$8',
   },
 
+  '@xl': {
+    px: '$12',
+  },
+
   variants: {
     size: {
       fluid: {
