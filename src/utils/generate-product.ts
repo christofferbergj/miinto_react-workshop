@@ -1,4 +1,3 @@
-/* eslint-disable import/no-absolute-path */
 import { faker } from '@faker-js/faker'
 
 import dynamite1 from '/dynamite1.png'
