@@ -13,12 +13,18 @@ export const ProductsWideRow = () => {
     <Box
       css={{
         display: 'grid',
-        gap: '$8',
+        gap: '$5',
         mt: '$10',
 
         '@lg': {
           gridTemplateColumns: 'repeat(auto-fit, minmax(0, 1fr))',
           mt: '$20',
+          gap: '$8',
+        },
+
+        '@xl': {
+          gridColumnGap: '$10',
+          gridRowGap: '$14',
         },
       }}
     >

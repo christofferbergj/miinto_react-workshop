@@ -8,7 +8,7 @@ import { listOf } from '~/utils/list-of'
 
 const products = listOf(generateProduct, 4)
 
-export const ProductsRow = () => {
+export const ProductRow = () => {
   return (
     <Box
       css={{
@@ -28,6 +28,11 @@ export const ProductsRow = () => {
           gridTemplateColumns: 'repeat(4, minmax(300px, 1fr))',
           gap: '$8',
           mt: '$20',
+        },
+
+        '@xl': {
+          gridColumnGap: '$10',
+          gridRowGap: '$14',
         },
       }}
     >

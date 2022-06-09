@@ -8,7 +8,7 @@
     "^react$/",
     "<THIRD_PARTY_MODULES>",
     "^~/app/?(.*)$",
-    "^~/(react|hooks|components|public)/?(.*)$",
+    "^~/(react|hooks|pages|components|public)/?(.*)$",
     "^(../)+",
     "^(./|/)"
   ]

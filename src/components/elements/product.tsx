@@ -18,6 +18,16 @@ const FavouriteButton = styled('button', {
   height: 36,
   transition: '$button',
 
+  '> svg': {
+    width: 18,
+    height: 18,
+
+    '@lg': {
+      width: 22,
+      height: 22,
+    },
+  },
+
   '@hover': {
     '&:hover': {
       background: '$gray4',
