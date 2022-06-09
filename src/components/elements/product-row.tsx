@@ -11,6 +11,7 @@ const products = listOf(generateProduct, 4)
 export const ProductRow = () => {
   return (
     <Box
+      data-component="product-row"
       css={{
         display: 'grid',
         gridTemplateColumns: 'repeat(4, minmax(260px, 1fr))',

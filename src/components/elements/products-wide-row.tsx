@@ -11,6 +11,7 @@ const products = listOf(generateProduct, 2)
 export const ProductsWideRow = () => {
   return (
     <Box
+      data-component="products-wide-row"
       css={{
         display: 'grid',
         gap: '$5',
