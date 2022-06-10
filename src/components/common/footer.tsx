@@ -6,14 +6,14 @@ import { Text } from '~/components/elements/text'
 import { styled } from '~/theme'
 
 const StyledFooter = styled('footer', {
-  mt: '$20',
-  py: '$6',
+  marginTop: '$20',
+  paddingVertical: '$6',
   display: 'flex',
   textAlign: 'center',
 
   '@md': {
-    mt: 400,
-    py: '$10',
+    marginTop: 400,
+    paddingVertical: '$10',
   },
 })
 

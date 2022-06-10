@@ -182,11 +182,11 @@ export const { styled } = createStitches({
     pl: (value: Stitches.PropertyValue<'paddingLeft'>) => ({
       paddingLeft: value,
     }),
-    px: (value: Stitches.PropertyValue<'paddingLeft'>) => ({
+    paddingHorizontal: (value: Stitches.PropertyValue<'paddingLeft'>) => ({
       paddingLeft: value,
       paddingRight: value,
     }),
-    py: (value: Stitches.PropertyValue<'paddingTop'>) => ({
+    paddingVertical: (value: Stitches.PropertyValue<'paddingTop'>) => ({
       paddingTop: value,
       paddingBottom: value,
     }),
@@ -205,11 +205,11 @@ export const { styled } = createStitches({
     ml: (value: Stitches.PropertyValue<'marginLeft'>) => ({
       marginLeft: value,
     }),
-    mx: (value: Stitches.PropertyValue<'marginLeft'>) => ({
+    marginHorizontal: (value: Stitches.PropertyValue<'marginLeft'>) => ({
       marginLeft: value,
       marginRight: value,
     }),
-    my: (value: Stitches.PropertyValue<'marginTop'>) => ({
+    marginVartical: (value: Stitches.PropertyValue<'marginTop'>) => ({
       marginTop: value,
       marginBottom: value,
     }),

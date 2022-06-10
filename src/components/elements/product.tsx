@@ -95,8 +95,8 @@ export const Product = ({ id, price, title, image }: TProduct) => {
 
       <Box
         css={{
-          mt: '$4',
-          px: '$2',
+          marginTop: '$4',
+          paddingHorizontal: '$2',
           display: 'flex',
           alignItems: 'start',
           justifyContent: 'space-between',
@@ -104,12 +104,12 @@ export const Product = ({ id, price, title, image }: TProduct) => {
       >
         <Box>
           <Text semibold>{title}</Text>
-          <Text muted medium size="sm" css={{ mt: '$2' }}>
+          <Text muted medium size="sm" css={{ marginTop: '$2' }}>
             {price}
           </Text>
         </Box>
 
-        <Box css={{ ml: '$4' }}>
+        <Box css={{ marginLeft: '$4' }}>
           <FavouriteButton type="button" onClick={toggleFavourite}>
             {isFavourite ? <HeartFilledIcon /> : <HeartIcon />}
           </FavouriteButton>
