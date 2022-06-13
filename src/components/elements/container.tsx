@@ -3,16 +3,16 @@ import { styled } from '~/theme'
 export const Container = styled('div', {
   boxSizing: 'border-box',
   flexShrink: 0,
-  w: '100%',
-  mx: 'auto',
-  px: '$5',
+  width: '100%',
+  marginHorizontal: 'auto',
+  paddingHorizontal: '$5',
 
   '@md': {
-    px: '$8',
+    paddingHorizontal: '$8',
   },
 
   '@xl': {
-    px: '$12',
+    paddingHorizontal: '$12',
   },
 
   variants: {

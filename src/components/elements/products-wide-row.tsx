@@ -15,11 +15,11 @@ export const ProductsWideRow = () => {
       css={{
         display: 'grid',
         gap: '$5',
-        mt: '$10',
+        marginTop: '$10',
 
         '@lg': {
           gridTemplateColumns: 'repeat(auto-fit, minmax(0, 1fr))',
-          mt: '$20',
+          marginTop: '$20',
           gap: '$8',
         },
 

@@ -18,8 +18,8 @@ export const ProductRow = () => {
         overflowX: 'scroll',
         scrollSnapType: 'x mandatory',
         gap: '$5',
-        pb: '$10',
-        mt: '$10',
+        paddingBottom: '$10',
+        marginTop: '$10',
 
         '> *': {
           scrollSnapAlign: 'center',
@@ -28,7 +28,7 @@ export const ProductRow = () => {
         '@lg': {
           gridTemplateColumns: 'repeat(4, minmax(300px, 1fr))',
           gap: '$8',
-          mt: '$20',
+          marginTop: '$20',
         },
 
         '@xl': {

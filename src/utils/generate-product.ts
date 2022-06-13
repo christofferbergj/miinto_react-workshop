@@ -8,7 +8,7 @@ import dynamite5 from '/dynamite5.png'
 import dynamite6 from '/dynamite6.png'
 import dynamite7 from '/dynamite7.png'
 
-export type TProduct = {
+export type ProductProps = {
   id: string
   title: string
   price: string
@@ -25,7 +25,7 @@ const images = [
   dynamite7,
 ]
 
-export const generateProduct = (overrides?: Partial<TProduct>): TProduct => ({
+export const generateProduct = (overrides?: Partial<ProductProps>): ProductProps => ({
   id: faker.datatype.uuid(),
   title: faker.commerce.productName(),
   price: Intl.NumberFormat('en-US', {

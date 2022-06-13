@@ -9,10 +9,10 @@ import { styled } from '~/theme'
 import { useTheme } from '~/theme-context'
 
 const StyledHeader = styled('header', {
-  py: '$8',
+  paddingVertical: '$8',
 
   '@lg': {
-    py: '$12',
+    paddingVertical: '$12',
   },
 })
 
@@ -23,8 +23,8 @@ const ThemeToggle = styled('button', {
   alignItems: 'center',
   justifyContent: 'center',
   border: '1px solid $gray7',
-  w: '$8',
-  h: '$8',
+  width: '$8',
+  height: '$8',
   borderRadius: '$3',
   transition: '$button',
 
@@ -61,22 +61,22 @@ export const Header = () => {
 
   return (
     <StyledHeader>
-      <Container css={{ d: 'flex', ai: 'center' }}>
+      <Container css={{ display: 'flex', alignItems: 'center' }}>
         <Text
           bold
           uppercase
           css={{
             display: 'inline-flex',
-            p: '$1',
+            padding: '$1',
             whiteSpace: 'nowrap',
-            mr: '$10',
+            marginRight: '$10',
           }}
         >
-          The Miinto Dynamite Shop <Text css={{ ml: '$2' }}>🧨</Text>
+          The Miinto Dynamite Shop <Text css={{ marginLeft: '$2' }}>🧨</Text>
         </Text>
 
-        <Box css={{ ml: 'auto', d: 'flex', ai: 'center' }}>
-          <Box css={{ d: 'flex', ai: 'center', gap: '$10' }}>
+        <Box css={{ marginLeft: 'auto', display: 'flex', alignItems: 'center' }}>
+          <Box css={{ display: 'flex', alignItems: 'center', gap: '$10' }}>
             {menuItems.map((item) => (
               <MenuItem key={item} href="#">
                 {item}
@@ -84,7 +84,7 @@ export const Header = () => {
             ))}
           </Box>
 
-          <ThemeToggle css={{ ml: '$20' }} type="button" onClick={toggleTheme}>
+          <ThemeToggle css={{ marginLeft: '$20' }} type="button" onClick={toggleTheme}>
             {theme === 'light' ? <MoonIcon /> : <SunIcon />}
           </ThemeToggle>
         </Box>
