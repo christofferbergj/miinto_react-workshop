@@ -6,6 +6,10 @@ This demo project is made to highlight and showcase a few features of React.
 ## Demo
 https://miinto-react-workshop.vercel.app/
 
+## Requirements
+
+`Node 16` - can be installed with [tj/n]([url](https://github.com/tj/n))
+
 
 ## Installation
 
